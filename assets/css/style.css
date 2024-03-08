@@ -1,169 +1,232 @@
-.switch-mode-margin{
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-
+.switch-mode-margin {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
-.switch-mode{
-    display: flex;
-    justify-content: baseline;
+.switch-mode {
+  display: flex;
+  justify-content: baseline;
 }
 
-.checkbox{
-    opacity: 0;
-    position: absolute;
+.checkbox {
+  opacity: 0;
+  position: absolute;
 }
 
-.label{
+.label {
+  align-items: center;
+  background-color: #333;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 2px;
+  position: relative;
+  height: 26px;
+  width: 60px;
+
+  transform: scale(0.8);
+}
+
+.label .switch-button {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 26px;
+  width: 26px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .switch-button {
+  transform: translateX(34px);
+}
+
+.fa-moon {
+  fill: #fff;
+}
+
+.fa-sun {
+  fill: #fff;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 15px;
+}
+
+.content-alignment {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-title {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+}
+
+.information-title h1,
+h2 {
+  margin: 0;
+}
+
+.information-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-date,
+.test-duration,
+.fundation,
+.writing-test {
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.test-date h1,
+.test-duration h1,
+.fundation h1,
+.writing-test h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.information-description {
+  border-bottom: 1px solid #000;
+}
+
+.knowledge-table {
+  display: flex;
+  justify-content: center;
+}
+
+.knowledge-table dt {
+  margin-top: 5px;
+}
+
+.timeline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
+  width: 95%;
+}
+
+.timeline-margin {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+.timeline-margin p {
+  margin: 0;
+}
+
+.timeline-margin h2 {
+  font-size: 20px;
+  height: 50%;
+}
+
+.timeline-responsive-upper,
+.timeline-responsive-lower {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-monday,
+.timeline-tuesday,
+.timeline-wednesday,
+.timeline-thursday,
+.timeline-friday,
+.timeline-saturday {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 10px;
+  width: 250px;
+}
+
+.links {
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  .timeline {
     align-items: center;
-    background-color: #333;
-    border-radius: 50px;
-    cursor: pointer;
     display: flex;
-    justify-content: space-between;
-
-    padding: 2px;
-    position: relative;
-    height: 26px;
-    width: 60px;
-
-    transform: scale(0.8);
-
-}
-
-.label .switch-button{
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-
-    height: 26px;
-    width: 26px;
-
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .switch-button{
-    transform: translateX(34px);
-}
-
-.fa-moon{
-    fill: #fff;
-}
-
-.fa-sun{
-    fill: #fff;
-}
-
-
-main{
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    font-size: 15px
-}
-
-main dt{
-    margin-top: 5px;
-}
-
-
-.content-alignment{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-summary{
-    display: flex;
-    flex-direction: column;
-}
-
-.information-title{
-    font-family: "Comfortaa", sans-serif;
-    font-size: 20px;
-}
-
-.information-title h1, h2{
-    margin: 0;
-}
-
-.information-description{
-    display: flex;
-    flex-direction: column;
-}
-
-.test-date, .test-duration, .fundation, .writing-test{
-    align-items: baseline;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.test-date h1, .test-duration h1, .fundation h1, .writing-test h1{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.information-description{
-    border-bottom: 1px solid #000
-}
-
-.knowledge-table{
-    display: flex;
-    justify-content: center;
-}
-
-.timeline{
+    height: 100%;
     text-align: center;
-    margin: 5px;
-    height: 40vh;
-    width: 100%;
-}
+  }
 
-.timeline-margin{
+  .timeline p {
+    font-size: 12px;
+  }
+
+  .timeline-margin {
     align-items: center;
-    display: inline-flex;
-    justify-content: space-between;
-    width: 95%;
-    height: 80%;
-}
-
-.timeline-margin p{
-    margin: 0;
-}
-
-.timeline-margin h2{
-    font-size: 20px;
-    height: 50%;
-}
-
-.timeline-monday, .timeline-tuesday, .timeline-wednesday, .timeline-thursday, .timeline-friday, .timeline-saturday{
-    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 35%;
-    width: 12%;
+  }
 
+  .timeline-responsive-upper,
+  .timeline-responsive-lower {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-responsive-lower {
+    margin-top: 10px;
+  }
+
+  .timeline-monday,
+  .timeline-tuesday,
+  .timeline-wednesday,
+  .timeline-thursday,
+  .timeline-friday,
+  .timeline-saturday {
+    width: 150px;
+    margin: 10px;
+    height: 150px;
+  }
 }
 
-@media (max-width: 700px){
-    .timeline{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    .timeline-margin{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
+@media (max-width: 1280px) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .timeline-monday, .timeline-tuesday, .timeline-wednesday, .timeline-thursday, .timeline-friday, .timeline-saturday{
-        margin-top: 10px;
-        width: 80%;
-    }
+  .timeline-margin {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-responsive-lower {
+    margin-top: 10px;
+  }
 }
