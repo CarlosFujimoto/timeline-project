@@ -1,10 +1,3 @@
-body{
-    background-color: #fafafa;
-    color: #000;
-
-    transition: 0.5s linear;
-}
-
 .switch-mode-margin{
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -14,11 +7,6 @@ body{
 .switch-mode{
     display: flex;
     justify-content: baseline;
-}
-
-body.dark{
-    background-color: #232c35;
-    color: #fafafa;
 }
 
 .checkbox{
@@ -129,8 +117,53 @@ main dt{
 }
 
 .timeline{
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
+    text-align: center;
+    margin: 5px;
+    height: 40vh;
     width: 100%;
 }
 
+.timeline-margin{
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 95%;
+    height: 80%;
+}
+
+.timeline-margin p{
+    margin: 0;
+}
+
+.timeline-margin h2{
+    font-size: 20px;
+    height: 50%;
+}
+
+.timeline-monday, .timeline-tuesday, .timeline-wednesday, .timeline-thursday, .timeline-friday, .timeline-saturday{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    width: 12%;
+
+}
+
+@media (max-width: 700px){
+    .timeline{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .timeline-margin{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline-monday, .timeline-tuesday, .timeline-wednesday, .timeline-thursday, .timeline-friday, .timeline-saturday{
+        margin-top: 10px;
+        width: 80%;
+    }
+}

@@ -1,0 +1,54 @@
+body{
+    background-color: #fafafa;
+    color: #000;
+
+    transition: 0.5s linear;
+}
+
+body.dark{
+    background-color: #232c35;
+    color: #fafafa;
+}
+
+.timeline-monday, .timeline-tuesday, .timeline-wednesday, .timeline-thursday, .timeline-friday, .timeline-saturday{
+    transition: 0.5s linear;
+}
+
+
+.timeline-monday{
+    background-color: #5ddff3;
+} 
+.timeline-tuesday{
+    background-color: #79e7f6;
+}
+.timeline-wednesday{
+    background-color: #96eff9;
+}
+.timeline-thursday{
+    background-color: #b2f7fc;
+}
+.timeline-friday{
+    background-color: #ceffff;
+}
+.timeline-saturday{
+    background-color: #d4fcfc;
+}
+
+.timeline-monday.dark-mode{
+    background-color: #1f2d56;
+} 
+.timeline-tuesday.dark-mode{
+    background-color: #172248;
+}
+.timeline-wednesday.dark-mode{
+    background-color: #101739;
+}
+.timeline-thursday.dark-mode{
+    background-color: #080b2b;
+}
+.timeline-friday.dark-mode{
+    background-color: #00001c;
+}
+.timeline-saturday.dark-mode{
+    background-color: #000013;
+}
