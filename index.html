@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/dark_mode.css" />
+    <link rel="stylesheet" href="assets/css/nav_bar.css" />
     <!--CSS Link-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +22,31 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
   </head>
   <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/" class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="30"
+            viewBox="0 -960 960 960"
+            width="30"
+            class="home-icon"
+          >
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+            />
+          </svg>
+        </a>
+
+        <button class="burguer"></button>
+
+        <ul class="nav-list">
+          <li><a href="materiais.html">Materiais</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Social</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <div class="content-alignment">
         <div class="container-summary">
@@ -279,5 +305,6 @@
     </main>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script_nav_bar.js"></script>
   </body>
 </html>

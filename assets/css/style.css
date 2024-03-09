@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .switch-mode-margin {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -239,6 +243,6 @@ h2 {
   .timeline-friday,
   .timeline-saturday{
     width: 220px;
-    height: 125px;
+    height: 100px;
   }
 }
