@@ -230,3 +230,15 @@ h2 {
     margin-top: 10px;
   }
 }
+
+@media (max-width: 1970px){
+  .timeline-monday,
+  .timeline-tuesday,
+  .timeline-wednesday,
+  .timeline-thursday,
+  .timeline-friday,
+  .timeline-saturday{
+    width: 220px;
+    height: 125px;
+  }
+}
