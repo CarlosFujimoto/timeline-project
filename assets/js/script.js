@@ -2,6 +2,7 @@ const chk = document.getElementById("chk");
 const header = document.querySelector(".header");
 const label = document.querySelector(".label");
 const navList = document.querySelector(".nav-list");
+const links = document.querySelector(".link-margin-control")
 
 function checkDarkMode() {
     if (localStorage.getItem("darkMode") === "true") {
@@ -9,6 +10,7 @@ function checkDarkMode() {
       header.classList.add("dark-mode");
       label.classList.add("dark-mode");
       navList.classList.add("dark-mode");
+      link.classList.add("dark-mode");
       
       document.querySelectorAll('.nav-list a').forEach((button) => {
           button.classList.add('dark-mode');
@@ -27,7 +29,8 @@ chk.addEventListener("change", () => {
   document.body.classList.toggle("dark");
   header.classList.toggle("dark-mode");
   label.classList.toggle("dark-mode");
-  navList.classList.toggle("dark-mode")
+  navList.classList.toggle("dark-mode");
+  link.classList.toggle("dark-mode");
   toggleTimelineColors();
 });
 
@@ -49,7 +52,9 @@ function toggleTimelineColors() {
 }
 
 function handleSvgHover(event) {
+
     const svgPath = event.currentTarget.querySelector('.home-icon path');
+
     const isHovered = svgPath.classList.contains('hovered');
 
     if (event.type === 'mouseover' && !isHovered) {
