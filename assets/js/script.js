@@ -10,7 +10,6 @@ function checkDarkMode() {
       header.classList.add("dark-mode");
       label.classList.add("dark-mode");
       navList.classList.add("dark-mode");
-      link.classList.add("dark-mode");
       
       document.querySelectorAll('.nav-list a').forEach((button) => {
           button.classList.add('dark-mode');
@@ -30,7 +29,6 @@ chk.addEventListener("change", () => {
   header.classList.toggle("dark-mode");
   label.classList.toggle("dark-mode");
   navList.classList.toggle("dark-mode");
-  link.classList.toggle("dark-mode");
   toggleTimelineColors();
 });
 
