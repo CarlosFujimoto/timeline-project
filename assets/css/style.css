@@ -1,61 +1,15 @@
-.switch-mode-margin {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.switch-mode {
+body{
   display: flex;
-  justify-content: baseline;
-}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  align-items: center;
-  background-color: #333;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-
-  padding: 2px;
-  position: relative;
-  height: 26px;
-  width: 60px;
-
-  transform: scale(0.8);
-}
-
-.label .switch-button {
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-
-  height: 26px;
-  width: 26px;
-
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .switch-button {
-  transform: translateX(34px);
-}
-
-.fa-moon {
-  fill: #fff;
-}
-
-.fa-sun {
-  fill: #fff;
+  flex-direction: column;
 }
 
 main {
+  padding-block: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -74,6 +28,7 @@ main {
 .container-summary {
   display: flex;
   flex-direction: column;
+  width: 95%;
 }
 
 .information-title {
@@ -81,9 +36,8 @@ main {
   font-size: 20px;
 }
 
-.information-title h1,
-h2 {
-  margin: 0;
+.information-title {
+  margin-block: 10px;
 }
 
 .information-description {
@@ -99,6 +53,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-block: 10px;
   width: 100%;
 }
 
@@ -117,10 +72,12 @@ h2 {
 .knowledge-table {
   display: flex;
   justify-content: center;
+  margin-block: 15px;
 }
 
 .knowledge-table dt {
-  margin-top: 5px;
+  font-weight: 700;
+  margin-block: 5px;
 }
 
 .timeline {
@@ -131,6 +88,10 @@ h2 {
   justify-content: center;
   margin: 5px;
   width: 95%;
+}
+
+.timeline h1{
+  margin-block: 20px;
 }
 
 .timeline-margin {
@@ -231,7 +192,7 @@ h2 {
   }
 }
 
-@media (max-width: 1970px){
+@media (max-width: 1920px){
   .timeline-monday,
   .timeline-tuesday,
   .timeline-wednesday,
@@ -239,6 +200,6 @@ h2 {
   .timeline-friday,
   .timeline-saturday{
     width: 220px;
-    height: 125px;
+    height: 100px;
   }
 }

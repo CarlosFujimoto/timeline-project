@@ -1,0 +1,24 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-margin-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-first-block,
+.link-second-block,
+.link-third-block,
+.link-fourth-block,
+.link-fifth-block,
+.link-sixth-block{
+    display: flex;
+    flex-direction: column;
+    margin-block: 5px;
+}
