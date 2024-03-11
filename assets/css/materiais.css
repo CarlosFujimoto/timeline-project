@@ -1,24 +1,52 @@
-*{
-    font-family: "Open Sans", sans-serif;
+* {
+  font-family: "Open Sans", sans-serif;
 }
 
-.links{
-    display: flex;
-    flex-direction: column;
+.links {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 95vh;
 }
 
-.link-margin-control{
-    display: flex;
-    flex-direction: column;
+.links-blocks-control {
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
-.link-first-block,
-.link-second-block,
-.link-third-block,
-.link-fourth-block,
-.link-fifth-block,
-.link-sixth-block{
-    display: flex;
-    flex-direction: column;
-    margin-block: 5px;
+.links-blocks-control a:link,
+.links-blocks-control a:visited {
+  color: #cbf2fd;
+}
+
+.btn-links {
+  background-color: #10c5ea;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-block: 5px;
+  margin-inline: 8px;
+  padding-block: 7px;
+  padding-inline: 3px;
+  text-decoration: none;
+  text-align: center;
+  transition: 276ms;
+  width: 200px;
+}
+
+.btn-links:hover {
+  background-color: #02a2c2;
+}
+
+.link-conhecimentos-bancarios,
+.link-tecnologia-informacao,
+.link-matematica-financeira,
+.link-probabilidade-estatistica,
+.link-comportamentos-digitais,
+.link-portugues,
+.link-ingles {
+  display: flex;
+  flex-direction: column;
+  margin-block: 10px;
 }
