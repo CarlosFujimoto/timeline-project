@@ -4,7 +4,7 @@
 
 > O projeto Timeline é uma ideia de site destinado a facilitar a preparação para concursos públicos. Pretende-se desenvolvê-lo até a conclusão do concurso específico, para então adaptá-lo a fim de criar cronogramas automáticos para diversos tipos de concursos.
 
-### Linguagens usadas
+### Desenvolvido com
 ![HTTP](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 )
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
