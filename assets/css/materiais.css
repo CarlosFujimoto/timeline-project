@@ -3,24 +3,21 @@
 }
 
 .links {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .links-blocks-control {
+  align-items: center;
   display: grid;
-  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 100%;
 }
 
-.links-blocks-control a:link,
-.links-blocks-control a:visited {
-  color: #cbf2fd;
-}
-
 .btn-links {
-  background-color: #10c5ea;
   border-radius: 10px;
   font-size: 14px;
   margin-block: 5px;
@@ -33,10 +30,6 @@
   width: 200px;
 }
 
-.btn-links:hover {
-  background-color: #02a2c2;
-}
-
 .link-conhecimentos-bancarios,
 .link-tecnologia-informacao,
 .link-matematica-financeira,
@@ -44,7 +37,9 @@
 .link-comportamentos-digitais,
 .link-portugues,
 .link-ingles {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-block: 10px;
 }
