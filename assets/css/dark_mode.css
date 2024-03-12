@@ -135,3 +135,31 @@ body.dark {
     background-color: #101739;
   }
 }
+
+.btn-links,
+.btn-links:link,
+.btn-links:visited{
+  background-color: #10c5ea;
+  color: #101739;
+  transition: 280ms;
+
+}
+
+.btn-links:hover{
+  background-color: #008db1;
+  color: #fff;
+}
+
+.dark .btn-links,
+.dark .btn-links:link,
+.dark .btn-links:visited {
+  background-color: #114b8c; 
+  color:  #5ddff3; 
+  transition: 280ms;
+}
+
+.dark .btn-links:hover{
+  background-color: #181e5e;
+  color:  #fff;
+  
+}
