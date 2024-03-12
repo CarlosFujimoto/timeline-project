@@ -107,6 +107,7 @@ main {
 
 .timeline-margin h2 {
   font-size: 20px;
+  text-decoration: underline;
   height: 50%;
 }
 
@@ -144,6 +145,7 @@ main {
 
   .timeline p {
     font-size: 12px;
+    opacity: 100%;
   }
 
   .timeline-margin {

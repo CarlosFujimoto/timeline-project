@@ -51,7 +51,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #E4E9F2;
   color: #000;
   transition: 0.2s linear;
 }
@@ -62,7 +62,7 @@ body.dark {
 }
 
 .header {
-  background-color: #10c5ea;
+  background-color: transparent;
   padding-inline: 16px;
   transition: 0.2s linear;
 }
@@ -72,7 +72,7 @@ body.dark {
 }
 
 .label {
-  background-color: #008db1;
+  background-color: #3321A6;
   transition: 0.2s linear;
 }
 
@@ -80,8 +80,18 @@ body.dark {
   background-color: #457bc2;
 }
 
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited{
+  color: #2D4BA6;
+}
+
 .nav-list.dark-mode a:hover {
   color: #15d7fd; 
+}
+
+.home-icon path{
+  fill: #2D4BA6;
 }
 
 .dark-mode .home-icon:hover path {
@@ -89,22 +99,28 @@ body.dark {
 }
 
 .timeline-monday {
-  background-color: #5ddff3;
+  background-color: #04D9B2;
+  color: #E4E9F2;
 }
 .timeline-tuesday {
-  background-color: #79e7f6;
+  background-color: #070A40;
+  color: #E4E9F2;
 }
 .timeline-wednesday {
-  background-color: #96eff9;
+  background-color: #04D9B2;
+  color: #E4E9F2;
 }
 .timeline-thursday {
-  background-color: #b2f7fc;
+  background-color: #070A40;
+  color: #E4E9F2;
 }
 .timeline-friday {
-  background-color: #ceffff;
+  background-color: #04D9B2;
+  color: #E4E9F2;
 }
 .timeline-saturday {
-  background-color: #d4fcfc;
+  background-color: #070A40;
+  color: #E4E9F2;
 }
 
 .timeline-monday.dark-mode {
