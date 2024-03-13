@@ -1,0 +1,46 @@
+/* Color Theme Swatches in Hex */
+UI/UX-Design,-Mobile-App-Design-1-hex { color: #3321A6; }
+UI/UX-Design,-Mobile-App-Design-2-hex { color: #070A40; }
+UI/UX-Design,-Mobile-App-Design-3-hex { color: #2D4BA6; }
+UI/UX-Design,-Mobile-App-Design-4-hex { color: #E4E9F2; }
+UI/UX-Design,-Mobile-App-Design-5-hex { color: #04D9B2; }
+
+/* Color Theme Swatches in RGBA */
+UI/UX-Design,-Mobile-App-Design-1-rgba { color: rgba(50, 33, 165, 1); }
+UI/UX-Design,-Mobile-App-Design-2-rgba { color: rgba(7, 9, 63, 1); }
+UI/UX-Design,-Mobile-App-Design-3-rgba { color: rgba(44, 75, 165, 1); }
+UI/UX-Design,-Mobile-App-Design-4-rgba { color: rgba(227, 232, 242, 1); }
+UI/UX-Design,-Mobile-App-Design-5-rgba { color: rgba(4, 216, 177, 1); }
+
+/* Color Theme Swatches in HSLA */
+UI/UX-Design,-Mobile-App-Design-1-hsla { color: hsla(247, 66, 39, 1); }
+UI/UX-Design,-Mobile-App-Design-5-hsla { color: hsla(168, 96, 43, 1); }
+UI/UX-Design,-Mobile-App-Design-2-hsla { color: hsla(236, 80, 13, 1); }
+UI/UX-Design,-Mobile-App-Design-4-hsla { color: hsla(219, 36, 92, 1); }
+UI/UX-Design,-Mobile-App-Design-3-hsla { color: hsla(225, 57, 41, 1); }
+
+
+
+
+/*Dark mode */
+/* Color Theme Swatches in Hex */
+.GENOM©-1-hex { color: #4E2973; }
+.GENOM©-2-hex { color: #B796D9; }
+.GENOM©-3-hex { color: #EEF26D; }
+.GENOM©-4-hex { color: #F2F2F2; }
+.GENOM©-5-hex { color: #0D0D0D; }
+
+/* Color Theme Swatches in RGBA */
+.GENOM©-1-rgba { color: rgba(78, 41, 114, 1); }
+.GENOM©-2-rgba { color: rgba(183, 149, 216, 1); }
+.GENOM©-3-rgba { color: rgba(237, 242, 109, 1); }
+.GENOM©-4-rgba { color: rgba(242, 242, 242, 1); }
+.GENOM©-5-rgba { color: rgba(12, 12, 12, 1); }
+
+/* Color Theme Swatches in HSLA */
+.GENOM©-1-hsla { color: hsla(270, 47, 30, 1); }
+.GENOM©-2-hsla { color: hsla(270, 46, 71, 1); }
+.GENOM©-3-hsla { color: hsla(61, 83, 68, 1); }
+.GENOM©-4-hsla { color: hsla(0, 0, 95, 1); }
+.GENOM©-5-hsla { color: hsla(0, 0, 5, 1); }
+
