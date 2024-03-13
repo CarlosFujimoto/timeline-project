@@ -144,6 +144,7 @@ main {
 
   .timeline p {
     font-size: 12px;
+    opacity: 100%;
   }
 
   .timeline-margin {
