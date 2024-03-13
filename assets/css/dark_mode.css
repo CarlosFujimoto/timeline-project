@@ -57,8 +57,8 @@ body {
 }
 
 body.dark {
-  background-color: #232c35;
-  color: #fafafa;
+  background-color: #0D0D0D;
+  color: #F2F2F2;
 }
 
 .header {
@@ -68,7 +68,7 @@ body.dark {
 }
 
 .header.dark-mode {
-  background-color: #114b8c;
+  background-color: transparent;
 }
 
 .label {
@@ -77,7 +77,15 @@ body.dark {
 }
 
 .label.dark-mode {
-  background-color: #457bc2;
+  background-color: #B796D9;
+}
+
+.nav {
+  border-bottom: 1px solid #2D4BA6;
+}
+
+.nav.dark-mode{
+  border-bottom: 1px solid #B796D9;
 }
 
 .nav-list a,
@@ -86,96 +94,133 @@ body.dark {
   color: #2D4BA6;
 }
 
+.nav-list a:hover{
+  color: #04D9B2;
+}
+
+.nav-list.dark-mode a,
+.nav-list.dark-mode a:link,
+.nav-list.dark-mode a:visited{
+  color: #B796D9;
+}
+
 .nav-list.dark-mode a:hover {
-  color: #15d7fd; 
+  color: #EEF26D; 
 }
 
 .home-icon path{
   fill: #2D4BA6;
+  transition: 280ms;
+}
+
+.home-icon:hover path{
+  fill: #04D9B2;
+}
+
+.dark-mode .home-icon path{
+  fill: #B796D9;
+  transition: 280ms;
 }
 
 .dark-mode .home-icon:hover path {
-  fill: #15d7fd; 
+  fill: #EEF26D; 
+}
+
+.burguer::after,
+.burguer::before{
+  background: #2D4BA6;
+}
+
+.dark-mode .burguer{
+  border-top: 3px solid #B796D9;
+}
+.dark-mode .burguer::after,
+.dark-mode .burguer::before{
+  background: #B796D9;
+
 }
 
 .timeline-monday {
-  background-color: #04D9B2;
+  background-color: #2D4BA6;
   color: #E4E9F2;
 }
 .timeline-tuesday {
-  background-color: #070A40;
+  background-color: #2D4BA6;
   color: #E4E9F2;
 }
 .timeline-wednesday {
-  background-color: #04D9B2;
+  background-color: #2D4BA6;
   color: #E4E9F2;
 }
 .timeline-thursday {
-  background-color: #070A40;
+  background-color: #2D4BA6;
   color: #E4E9F2;
 }
 .timeline-friday {
-  background-color: #04D9B2;
+  background-color: #2D4BA6;
   color: #E4E9F2;
 }
 .timeline-saturday {
-  background-color: #070A40;
+  background-color: #2D4BA6;
   color: #E4E9F2;
 }
 
 .timeline-monday.dark-mode {
-  background-color: #1f2d56;
+  background-color: #4E2973;
 }
 .timeline-tuesday.dark-mode {
-  background-color: #172248;
+  background-color: #4E2973;
 }
 .timeline-wednesday.dark-mode {
-  background-color: #101739;
+  background-color: #4E2973;
 }
 .timeline-thursday.dark-mode {
-  background-color: #080b2b;
+  background-color: #4E2973;
 }
 .timeline-friday.dark-mode {
-  background-color: #00001c;
+  background-color: #4E2973;
 }
 .timeline-saturday.dark-mode {
-  background-color: #000013;
+  background-color: #4E2973;
 }
 
 @media (max-width: 800px){
   .nav-list{
-    background-color: #008db1;
+    background-color: #04D9B2;
   }
 
   .nav-list.dark-mode{
-    background-color: #101739;
+    background-color: #4E2973;
   }
 }
 
 .btn-links,
 .btn-links:link,
 .btn-links:visited{
-  background-color: #10c5ea;
-  color: #101739;
+  background-color: #2D4BA6;
+  color: #E4E9F2;
   transition: 280ms;
 
 }
 
 .btn-links:hover{
-  background-color: #008db1;
-  color: #fff;
+  background-color: #04D9B2;
+  color: #070A40;
+
+  box-shadow: 0px 0px 4px 6px rgba(4,217,178,0.25);
 }
 
 .dark .btn-links,
 .dark .btn-links:link,
 .dark .btn-links:visited {
-  background-color: #114b8c; 
-  color:  #5ddff3; 
+  background-color: #4E2973; 
+  color:  #F2F2F2; 
   transition: 280ms;
 }
 
 .dark .btn-links:hover{
-  background-color: #181e5e;
-  color:  #fff;
-  
+  background-color: #EEF26D;
+  color:  #4E2973;
+
+  box-shadow: 0px 0px 4px 6px rgba(237, 242, 109, 0.25);
 }

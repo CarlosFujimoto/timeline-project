@@ -2,6 +2,7 @@ const chk = document.getElementById("chk");
 const header = document.querySelector(".header");
 const label = document.querySelector(".label");
 const navList = document.querySelector(".nav-list");
+const navBar = document.querySelector(".nav");
 const links = document.querySelector(".link-margin-control");
 
 function checkDarkMode() {
@@ -10,6 +11,7 @@ function checkDarkMode() {
     header.classList.toggle("dark-mode", isDarkMode);
     label.classList.toggle("dark-mode", isDarkMode);
     navList.classList.toggle("dark-mode", isDarkMode);
+    navBar.classList.toggle("dark-mode", isDarkMode);
     toggleTimelineColors(isDarkMode);
     chk.checked = isDarkMode;
 }

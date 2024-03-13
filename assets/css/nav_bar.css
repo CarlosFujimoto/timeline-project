@@ -9,7 +9,6 @@ a {
 }
 
 .nav {
-  border-bottom: 1px solid #2D4BA6;
   height: 70px;
   margin-inline: auto;
   max-width: 1280px;
@@ -41,10 +40,6 @@ a {
   color: #fff;
   padding-block: 16px;
   transition: 276ms;
-}
-
-.nav-list a:hover {
-  color: #346bb0;
 }
 
 main {
