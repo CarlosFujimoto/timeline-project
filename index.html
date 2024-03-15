@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark_mode.css" />
     <link rel="stylesheet" href="assets/css/nav_bar.css" />
     <!--CSS Link-->
@@ -20,154 +19,100 @@
     <!--Import Font-->
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
+
+</head>
+<body>
     <header class="header">
-      <nav class="nav">
-        <div class="margin-button-menu">
-          <a href="/" class="logo">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="30"
-              viewBox="0 -960 960 960"
-              width="30"
-              class="home-icon"
-            >
-              <path
-                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
-              />
-            </svg>
-          </a>
-          <!---Botão Home-->
-          <div class="switch-mode">
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
+        <nav class="nav">
+          <div class="margin-button-menu">
+            <a href="/" class="logo">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height="24"
+                height="30"
                 viewBox="0 -960 960 960"
-                width="24"
-                class="fa-moon"
+                width="30"
+                class="home-icon"
               >
                 <path
-                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                  d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
                 />
               </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-                class="fa-sun"
-              >
-                <path
-                  d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
-                />
-              </svg>
-              <div class="switch-button"></div>
-            </label>
+            </a>
+            <!---Botão Home-->
+            <div class="switch-mode">
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" for="chk">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                  class="fa-moon"
+                >
+                  <path
+                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24"
+                  viewBox="0 -960 960 960"
+                  width="24"
+                  class="fa-sun"
+                >
+                  <path
+                    d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"
+                  />
+                </svg>
+                <div class="switch-button"></div>
+              </label>
+            </div>
           </div>
-        </div>
-
-        <button class="burguer"></button>
-
-        <ul class="nav-list">
-          <li><a href="materiais.html">Materiais</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Social</a></li>
-        </ul>
-      </nav>
+  
+          <button class="burguer"></button>
+  
+          <ul class="nav-list">
+            <li><a href="concurso_caixa.html">Concurso</a></li>
+            <li><a href="materiais.html">Materiais</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Social</a></li>
+          </ul>
+        </nav>
+        <!--nav bar-->
     </header>
     <main>
-      <div class="content-alignment">
-        <div class="container-summary">
-          <div class="information-title">
-            <h1>CONCURSO CAIXA 2024</h1>
-            <h2>Técnico Bancario Novo</h2>
-          </div>
-          <div class="information-description">
-            <div class="test-date">
-              <h1>Data da Prova</h1>
-              <p>26/05/2024</p>
-            </div>
-            <div class="test-duration">
-              <h1>Duração da Prova</h1>
-              <p>5 Horas</p>
-            </div>
-            <div class="fundation">
-              <h1>Banca</h1>
-              <p>CESGRANRIO</p>
-            </div>
-            <div class="writing-test">
-              <h1>Redação</h1>
-              <p>Mínimo 700</p>
-            </div>
-          </div>
-        </div>
-        <div class="knowledge-table">
-          <dl>
-            <dt>Conhecimentos Básicos e Porcentuais:</dt>
-            <dd>Português - 8% / 3x por semana</dd>
-            <dd>Inglês - 8% / 2x por semana</dd>
-            <dd>Matematica Financeira - 8% / 2x por semana</dd>
-            <dd>Probalidade e Estatística - 8% / 2x por semana</dd>
-            <dd>Ètica e Compilance - 8% / 2x por semana</dd>
+        <div class="mn--container-main-page">
+            <div class="mn-container--apresentation-margin-right">
+                <div class="mn--box-title-apresentation">
+                    <div class="box--title-time">
+                        <h1>TIME</h1>
+                    </div>
+                    <div class="box--title-line">
+                        <H1>LINE</H1>
+                    </div>
+                    <div class="box--description">
+                        <p><strong>Bem-vindo ao Timeline:</strong> Sua ferramenta essencial para dominar os estudos e alcançar o sucesso nos concursos e vestibulares.</p>
+                    </div>
+                    <div class="div--separator-content"></div>
+                    <div class="box--list-information">
+                        <ul>
+                            <li><strong>Por que ter um cronograma?</strong></li>
+                            <ol type="I">
+                                <li>Organização: Um cronograma ajuda a visualizar suas tarefas de estudo e a distribuí-las de forma equilibrada ao longo do tempo, evitando sobrecarga em determinados dias e garantindo que todos os tópicos sejam cobertos.</li>
 
-            <dt>Conhecimentos Específicos Porcentuais:</dt>
-            <dd>Conhecimentos Bancários - 25% / 3x por semana</dd>
-            <dd>Tecnologia da Informação - 8% / 1x por semana</dd>
-            <dd>Comportamentos Digitais - 8% / 1x por semana</dd>
-            <dd>Atendimento Bancário - 17% / 1x por semana</dd>
-          </dl>
+                                <li>Eficiência: Ao definir metas diárias ou semanais, você consegue manter um ritmo constante de estudo, o que é mais eficiente do que estudar de forma irregular ou em grandes blocos de tempo.</li>
+
+                                <li>Foco: Um cronograma permite priorizar as áreas de estudo mais importantes e dedicar tempo suficiente a cada uma delas, evitando distrações e garantindo um estudo mais focado.</li>
+                            </ol>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mn--box-image-apresentation">
+            </div>
         </div>
-      </div>
-      <div class="timeline">
-        <h1>Cronograma</h1>
-        <div class="timeline-margin">
-          <div class="timeline-responsive-upper">
-            <div class="timeline-monday">
-              <h2>Segunda Feira:</h2>
-              <p>- Conhecimentos Bancários</p>
-              <p>- Tecnologia da Informação</p>
-              <p>- Ética e Compilance</p>
-            </div>
-            <div class="timeline-tuesday">
-              <h2>Terça Feira:</h2>
-              <p>- Probalidade e Estatística</p>
-              <p>- Matematica Financeira</p>
-              <p>- Português</p>
-            </div>
-            <div class="timeline-wednesday">
-              <h2>Quarta Feira:</h2>
-              <p>- Conhecimentos Bancários</p>
-              <p>- Inglês</p>
-              <p>- Ètica e Compilance</p>
-            </div>
-          </div>
-          <div class="timeline-responsive-lower">
-            <div class="timeline-thursday">
-              <h2>Quinta Feira:</h2>
-              <p>- Probalidade e Estatística</p>
-              <p>- Português</p>
-              <p>- Comportamentos Digitais</p>
-            </div>
-            <div class="timeline-friday">
-              <h2>Sexta Feira:</h2>
-              <p>- Conhecimentos Bancários</p>
-              <p>- Matematica Financeira</p>
-              <p>- Atendimento Bancário</p>
-            </div>
-            <div class="timeline-saturday">
-              <h2>Sabado:</h2>
-              <p>- Redação</p>
-              <p>- Inglês</p>
-              <p>- Português</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </main>
-
     <script src="assets/js/script.js"></script>
-  </body>
+</body>
 </html>

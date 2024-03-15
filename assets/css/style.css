@@ -1,206 +1,66 @@
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-  display: flex;
-  flex-direction: column;
-}
+.mn--container-main-page{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
 
-main {
-  padding-block: 20px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  font-size: 15px;
-}
-
-.content-alignment {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.container-summary {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-}
-
-.information-title {
-  font-family: "Comfortaa", sans-serif;
-  font-size: 20px;
-}
-
-.information-title {
-  margin-block: 10px;
-}
-
-.information-description {
-  display: flex;
-  flex-direction: column;
-}
-
-.test-date,
-.test-duration,
-.fundation,
-.writing-test {
-  align-items: baseline;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-block: 10px;
-  width: 100%;
-}
-
-.test-date h1,
-.test-duration h1,
-.fundation h1,
-.writing-test h1 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.information-description {
-  border-bottom: 1px solid #000;
-}
-
-.knowledge-table {
-  display: flex;
-  justify-content: center;
-  margin-block: 15px;
-}
-
-.knowledge-table dt {
-  font-weight: 700;
-  margin-block: 5px;
-}
-
-.timeline {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  margin: 5px;
-  width: 95%;
-}
-
-.timeline h1{
-  margin-block: 20px;
-}
-
-.timeline-margin {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 95%;
-}
-
-.timeline-margin p {
-  margin: 0;
-}
-
-.timeline-margin h2 {
-  font-size: 20px;
-  height: 50%;
-}
-
-.timeline-responsive-upper,
-.timeline-responsive-lower {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.timeline-monday,
-.timeline-tuesday,
-.timeline-wednesday,
-.timeline-thursday,
-.timeline-friday,
-.timeline-saturday {
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  margin-inline: 10px;
-  width: 250px;
-}
-
-.links {
-  height: 100%;
-}
-
-@media (max-width: 750px) {
-  .timeline {
-    align-items: center;
     display: flex;
+    margin-inline: 50px;
+
     height: 100%;
-    text-align: center;
-  }
-
-  .timeline p {
-    font-size: 12px;
-    opacity: 100%;
-  }
-
-  .timeline-margin {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .timeline-responsive-upper,
-  .timeline-responsive-lower {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .timeline-responsive-lower {
-    margin-top: 10px;
-  }
-
-  .timeline-monday,
-  .timeline-tuesday,
-  .timeline-wednesday,
-  .timeline-thursday,
-  .timeline-friday,
-  .timeline-saturday {
-    width: 150px;
-    margin: 10px;
-    height: 150px;
-  }
+    max-width: 1920px;
+    max-height: 980px;
 }
 
-@media (max-width: 1280px) {
-  .timeline {
+.mn-container--apresentation-margin-right{
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 100%;
-  }
 
-  .timeline-margin {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .timeline-responsive-lower {
-    margin-top: 10px;
-  }
+    width: 43%;
+    height: 85vh;
+    max-width: 1920px;
+    max-height: 980px;
 }
 
-@media (max-width: 1920px){
-  .timeline-monday,
-  .timeline-tuesday,
-  .timeline-wednesday,
-  .timeline-thursday,
-  .timeline-friday,
-  .timeline-saturday{
-    width: 220px;
-    height: 100px;
-  }
+.mn--box-title-apresentation{
+    max-width: 520px;
+    max-height: 270px;
+    width: 100%;
+    height: 100%;
+}
+
+.box--title-time,
+.box--title-line{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 57px;
+    font-weight: 900;
+}
+
+.box--title-time{
+    display: flex;
+}
+
+.box--title-line{
+    display: flex;
+    justify-content: end;
+}
+
+.div--separator-content{
+    margin: 40px;
+    border-top: 1px solid #000;
+}
+
+.box--list-information ul{
+    font-size: 13px;
+}
+
+.mn--box-image-apresentation{
+    height: 100%;
+    width: 100%;
+    max-width: 1350px;
+    max-height: 965px;
 }
