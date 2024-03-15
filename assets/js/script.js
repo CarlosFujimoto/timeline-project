@@ -1,4 +1,4 @@
-const chk = document.getElementById("chk");
+const chk = document.querySelector("#chk");
 const header = document.querySelector(".header");
 const label = document.querySelector(".label");
 const navList = document.querySelector(".nav-list");
