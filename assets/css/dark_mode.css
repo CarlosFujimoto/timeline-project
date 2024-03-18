@@ -50,6 +50,8 @@
   fill: #fff;
 }
 
+/*Dark mode button style dark mode*/
+
 body {
   background-color: #E4E9F2;
   color: #000;
@@ -60,6 +62,8 @@ body.dark {
   background-color: #0D0D0D;
   color: #F2F2F2;
 }
+
+/*Body dark mode*/
 
 .header {
   background-color: transparent;
@@ -140,6 +144,8 @@ body.dark {
 
 }
 
+/*Nav bar style dark mode*/
+
 .timeline-monday {
   background-color: #2D4BA6;
   color: #E4E9F2;
@@ -184,9 +190,11 @@ body.dark {
   background-color: #4E2973;
 }
 
+/*concurso caixa page dark mode*/
+
 @media (max-width: 800px){
   .nav-list{
-    background-color: #070A40;
+    background-color: #E4E9F2;
   }
 
   .nav-list.dark-mode{
@@ -223,4 +231,14 @@ body.dark {
   color:  #4E2973;
 
   box-shadow: 0px 0px 4px 6px rgba(237, 242, 109, 0.25);
+
+  /*Menu mobile design dark mode*/
+}
+
+.div--separator-content{
+  border-top: 1px solid #2D4BA6;
+}
+
+.dark .div--separator-content{
+  border-top: 1px solid #B796D9;
 }

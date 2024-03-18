@@ -4,6 +4,7 @@ const label = document.querySelector(".label");
 const navList = document.querySelector(".nav-list");
 const navBar = document.querySelector(".nav");
 const links = document.querySelector(".link-margin-control");
+const indexContentSeparator = document.querySelectorAll(".div--separator-content")
 
 function checkDarkMode() {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
@@ -12,6 +13,7 @@ function checkDarkMode() {
     label.classList.toggle("dark-mode", isDarkMode);
     navList.classList.toggle("dark-mode", isDarkMode);
     navBar.classList.toggle("dark-mode", isDarkMode);
+    indexContentSeparator.forEach(separator => separator.classList.toggle("dark", isDarkMode));
     toggleTimelineColors(isDarkMode);
     chk.checked = isDarkMode;
 }
