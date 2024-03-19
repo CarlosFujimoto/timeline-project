@@ -242,3 +242,15 @@ body.dark {
 .dark .div--separator-content{
   border-top: 1px solid #B796D9;
 }
+
+/*Div separator dark mode*/
+
+.txt--updates a:visited,
+.txt--updates a:link{
+  color: #000;
+}
+
+.dark .txt--updates a:visited,
+.dark .txt--updates a:link {
+  color: #f2f2f2;
+}

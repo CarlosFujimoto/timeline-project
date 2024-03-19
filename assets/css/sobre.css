@@ -51,6 +51,12 @@
     width: 500px;
 }
 
+.txt--updates a:link,
+.txt--updates a:visited{
+    text-decoration: underline;
+
+}
+
 .div--separator-content{
     width: 80%;
     margin-block: 15px;
