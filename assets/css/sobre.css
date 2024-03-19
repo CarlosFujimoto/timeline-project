@@ -1,0 +1,28 @@
+.main{
+    display: flex;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.mn--container-content-about{
+    display: flex;
+    flex-direction: column;
+}
+
+.mn--container-content-about h1, h2{
+    font-family: "Comfortaa", sans-serif;
+    text-align: justify;
+}
+
+.mn--container-content-about p{
+    font-family: "Open Sans", sans-serif;
+    margin-inline: 15px;
+
+}
+
+.mn--box-about-project,
+.mn--box-future-project{
+    margin-block: 10px;
+}
+
+
