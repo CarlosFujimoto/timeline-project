@@ -1,11 +1,19 @@
 .main{
-    display: flex;
-    max-width: 500px;
     margin: 10px;
+    margin-top: 50px;
+}
+
+.mn--container-margin-config{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .mn--container-content-about{
+    align-items: center;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -21,8 +29,30 @@
 }
 
 .mn--box-about-project,
-.mn--box-future-project{
+.mn--box-expectation-project{
     margin-block: 10px;
 }
 
+.mn--box-about-project,
+.mn--box-expectation-project,
+.mn--box-updates,
+.mn--box-mobile{
+    display: flex;
+}
+
+.txt--about-project,
+.txt--expectation-project,
+.txt--updates,
+.txt--mobile{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 500px;
+}
+
+.div--separator-content{
+    width: 80%;
+    margin-block: 15px;
+}
 
