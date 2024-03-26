@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline</title>
+
+    <!-- Tailwindcss import link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind customize -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            //Custom Colors
+            colors: {
+              primaryColorPlan: "#0B1726",
+              textColor: "#F2F2F2",
+              secondaryColor: "#038C8C",
+              hoverColor: "#13F2F2",
+              ocean: "#111D40",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans">
+    <div
+      class="m-1 mx-auto container flex flex-col space-y-5 lg:m-20 lg:flex-row-reverse"
+    >
+      <div class="w-11/12 lg:w-2/5 lg:flex lg:items-center">
+        <img src="/img/progress_image.svg" alt="progress_image" />
+      </div>
+      <div class="flex flex-col space-y-2 lg:w-3/5">
+        <div class="text-7xl lg:text-8xl">
+          <h1 class="font-light text-secondaryColor">
+            Página em
+            <span class="font-bold">construção</span>
+          </h1>
+        </div>
+        <div class="m-4">
+          <div
+            class="lg:w-4/6 lg:leading-loose lg:text-xl lg:space-y-3 md:text-sm space-y-2"
+          >
+            <p>Estamos em fase de melhorias.</p>
+            <p>
+              Este é um projeto pessoal e está em andamento, apenas algumas
+              sessões do site estão disponíveis para uso ou visualização.
+            </p>
+            <p>
+              Enquanto esta página está em progresso, que tal verificar outras
+              funcionalidades que estão disponíveis agora?
+            </p>
+          </div>
+        </div>
+        <div>
+          <a href="/index.html">
+            <button
+              class="bg-secondaryColor py-2 px-7 rounded text-textColor hover:bg-ocean duration-150 hover:ring hover:ring-ocean/20"
+            >
+              Voltar
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
